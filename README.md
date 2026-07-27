@@ -1,9 +1,11 @@
 # BottleneckVQC
 
-Hybrid **quantum-classical** UNet for conditional urban wind field reconstruction.
-A PennyLane variational quantum circuit (VQC) replaces the UNet bottleneck; wind
-speed and direction condition the decoder via FiLM. Paper names:
-**C-QB-UNet** (hybrid) and **C-UNet** (classical baseline).
+Hybrid **quantum–classical** UNet for conditional urban wind field reconstruction.
+A PennyLane variational quantum circuit (VQC) replaces the UNet bottleneck. Inflow
+conditions (wind speed and direction) are encoded and injected via FiLM into every
+convolutional block in the encoder and decoder.
+In the paper, the conditional quantum-bottleneck model is denoted as **C-QB-UNet**, 
+and the classical conditional UNet baseline is called **C-UNet**.
 
 This repository is the code availability package for *Communications AI & Computing*.
 
@@ -109,8 +111,6 @@ Shared helpers live in `functions/nb_helpers/`. Notebook outputs are cleared.
 - **Code:** this repository (MIT).
 - **Data:** [10.5281/zenodo.21500592](https://doi.org/10.5281/zenodo.21500592)
 - **Weights:** [10.5281/zenodo.21603668](https://doi.org/10.5281/zenodo.21603668)
-
-See also `CODE_AVAILABILITY.md`.
 
 ## Citation
 
