@@ -1,0 +1,91 @@
+"""Notebook helper utilities (plotting, transforms, metrics, spectrum, ED)."""
+
+from .transforms import (
+    signed_log1p,
+    signed_expm1,
+    transform_y_signed_log1p,
+    inverse_transform_y_signed_log1p,
+)
+from .paths import (
+    repo_root,
+    resolve_data_dir,
+    resolve_extracted_uv_dir,
+    resolve_ood_w07_120_path,
+    resolve_weights_path,
+)
+from .metrics import (
+    evaluate_split_physical,
+    evaluate_region_numpy,
+    print_region_metrics,
+    evaluate_gradient_numpy,
+    collect_grad_rows,
+    predict_denorm,
+    sample_r2_uv_together,
+)
+from .plotting import (
+    masked_array,
+    robust_range,
+    plot_uv_threeway,
+    plot_uv_qubits_compare,
+    plot_uv_layers_compare,
+    extract_valid_points_by_comp,
+    r2_score_np,
+    shared_axis_range,
+    plot_scatter_reg,
+)
+from .spectrum import (
+    component_energy_spectrum,
+    band_energy,
+    band_energy_ratios,
+    make_band_table,
+    plot_spectral_error,
+)
+from .ed_analysis import (
+    build_models,
+    spectrum_and_metrics_from_Z,
+    existing_layers,
+    build_multi_output_model,
+    spatial_flatten,
+    hierarchical_outer_ci,
+    inner_bootstrap_metrics,
+)
+
+__all__ = [
+    "signed_log1p",
+    "signed_expm1",
+    "transform_y_signed_log1p",
+    "inverse_transform_y_signed_log1p",
+    "repo_root",
+    "resolve_data_dir",
+    "resolve_extracted_uv_dir",
+    "resolve_ood_w07_120_path",
+    "resolve_weights_path",
+    "evaluate_split_physical",
+    "evaluate_region_numpy",
+    "print_region_metrics",
+    "evaluate_gradient_numpy",
+    "collect_grad_rows",
+    "predict_denorm",
+    "sample_r2_uv_together",
+    "masked_array",
+    "robust_range",
+    "plot_uv_threeway",
+    "plot_uv_qubits_compare",
+    "plot_uv_layers_compare",
+    "extract_valid_points_by_comp",
+    "r2_score_np",
+    "shared_axis_range",
+    "plot_scatter_reg",
+    "component_energy_spectrum",
+    "band_energy",
+    "band_energy_ratios",
+    "make_band_table",
+    "plot_spectral_error",
+    "build_models",
+    "spectrum_and_metrics_from_Z",
+    "existing_layers",
+    "build_multi_output_model",
+    "spatial_flatten",
+    "hierarchical_outer_ci",
+    "inner_bootstrap_metrics",
+]

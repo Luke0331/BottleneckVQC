@@ -1,0 +1,13 @@
+# Main paper experiment: signed-log1p + BottleneckVQC, random 80/10/10 split
+height_m: 15.0
+last_k: 12
+epochs: 1000
+batch_size: 2
+cond_emb_dim: 16
+n_qubits: 5
+n_layers: 2
+seed: 7
+train_frac: 0.8
+val_frac: 0.1
+lr: 0.001
+use_log1p: true

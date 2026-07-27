@@ -1,0 +1,30 @@
+# Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data & large artifacts (host on Zenodo; see data/README.md)
+data/extracted_uv/
+*.nc
+checkpoints/**
+!checkpoints/.gitkeep
+artifacts/**
+!artifacts/.gitkeep
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Notebook leftovers
+*.h5
+*.ckpt
+*.pt
+*.png
+!docs/**/*.png

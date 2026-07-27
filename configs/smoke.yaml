@@ -1,0 +1,13 @@
+# Short smoke run for installation checks
+height_m: 15.0
+last_k: 12
+epochs: 1
+batch_size: 1
+cond_emb_dim: 16
+n_qubits: 3
+n_layers: 1
+seed: 7
+train_frac: 0.6
+val_frac: 0.2
+lr: 0.001
+use_log1p: true

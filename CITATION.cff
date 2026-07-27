@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "BottleneckVQC: Hybrid Classical–Quantum UNet for Urban Wind-Field Reconstruction"
+version: "0.1.0"
+date-released: "2026-07-23"
+license: MIT
+repository-code: "https://github.com/Luke0331/BottleneckVQC"
+# authors:
+#   - family-names: "Last"
+#     given-names: "First"
+#     orcid: "https://orcid.org/0000-0000-0000-0000"
+# Prefer citing the journal article once published.
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21500592
+    description: "Processed PALM NetCDF wind-field data"
+  - type: doi
+    value: 10.5281/zenodo.21603668
+    description: "Pretrained model checkpoints (C-QB-UNet / C-UNet)"

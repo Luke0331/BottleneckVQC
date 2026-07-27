@@ -1,0 +1,16 @@
+# OOD evaluation config: train/val on extracted_uv, test on w07 @ 120°.
+# OOD file: data/extracted_uv/extracted_w07_deg120_3d.000.nc
+# See notebooks/02_ood_w07.ipynb.
+height_m: 15.0
+last_k: 12
+epochs: 1000
+batch_size: 2
+cond_emb_dim: 16
+n_qubits: 5
+n_layers: 2
+seed: 7
+train_frac: 0.8
+val_frac: 0.2
+lr: 0.001
+use_log1p: true
+ood_nc_file: extracted_uv/extracted_w07_deg120_3d.000.nc
